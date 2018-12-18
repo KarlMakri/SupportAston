@@ -1,0 +1,48 @@
+body{
+
+    font-family: sans-serif;
+
+}
+
+.parent{
+
+    min-height: 25rem;
+    width: 25rem;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+    border: 0.0650rem solid #ccc;
+
+}
+
+.enfant1,
+.enfant2,
+.enfant3,
+.enfant4,
+.enfant5,
+.enfant6{
+
+    box-sizing: border-box;
+    width: 133.333333333px;
+    height: 133.333333333px;
+    background-color: royalblue;
+    color: white;
+    border:  1px solid darkblue;
+    text-align: center;
+    line-height: 133.333333333px;
+    float: left;
+} 
+
+.clearfix{
+
+   overflow: hidden;
+}
+
+.float-left{
+
+    float: left;
+}
+
+.float-right{
+
+    float: right;
+}

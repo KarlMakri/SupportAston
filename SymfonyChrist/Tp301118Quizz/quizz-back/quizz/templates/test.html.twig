@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    {#<table>#}
+        {#{% for answer in answers  %}#}
+
+            {#<tr>#}
+                {#<td>{{ answer.id }}</td>#}
+                {#<td>{{ answer.label }}</td>#}
+                {#<td>{{ answer.correct }}</td>#}
+            {#</tr>#}
+
+        {#{% endfor %}#}
+    {#</table>#}
+
+    {{ dump(answers) }}
+    {{ dump(success) }}
+
+{% endblock %}

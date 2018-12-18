@@ -1,0 +1,16 @@
+.Fr{
+
+  color: blue;
+  font-weight: bold;
+}
+
+.En, .It {
+
+  display: none;
+}
+
+img.flag{
+
+  height: 30px;
+  opacity: 0.3;
+}

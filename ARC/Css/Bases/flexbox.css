@@ -1,0 +1,33 @@
+body{
+
+    font-family: sans-serif;
+}
+
+
+.container{
+
+    width: 600px;
+    min-width: 400px;
+    background-color: #f0f0f0;
+    border: 1px solid #CCC;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.container > * {
+    
+    padding: 5px;
+    background-color: blueviolet;
+    color: white;
+    border: 1px solid indigo;
+}
+
+.box2{
+
+    align-self: flex-end;
+}

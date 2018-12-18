@@ -1,0 +1,99 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+
+    color: inherit;
+    text-decoration: none;
+}
+
+.header,
+.main-content,
+.footer{
+
+    padding: 20px;
+
+}
+
+.header{
+
+    background-color: royalblue;
+    color: white;
+
+    align-self: flex-start;
+    position: sticky;
+    top: 0;
+}
+
+.footer{
+
+    display: flex;
+    flex-direction: column;
+    background-color: #222;
+    color: #f0f0f0;
+    }
+
+
+.menu{
+
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(38, 62, 134);
+    color: white;
+    align-self: flex-start;
+    position: sticky;
+    top: 120px;
+    justify-content: flex-start;
+
+
+}
+
+.menu a {
+
+    padding: 10px;
+}
+
+.menu a:hover {
+
+    background-color: #222;
+}
+
+.content{
+
+    display: flex;
+    flex-direction: column; 
+}
+
+/************************** Media Query ************************************************/
+
+@media screen and (min-width: 768px){ /* A Partir d'un ecran de 768 Pixels*/
+
+    .content{
+        flex-direction: row;
+    }
+
+    .main-content{
+
+        flex-grow: 1;
+        flex-shrink: 0;
+        flex-basis: 0;
+    }
+
+    .menu{
+
+        flex-basis: 14em;
+
+    }
+
+    .footer{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+}

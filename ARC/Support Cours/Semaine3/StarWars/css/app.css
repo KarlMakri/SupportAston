@@ -1,0 +1,82 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+#game{
+
+  width: 400px;
+  height: 500px;
+  background: black url('../img/galaxy.jpg') 0 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+
+}
+
+#ship{
+  width: 50px;
+  height: 50px;
+  /* background-color: yellow; */
+  background: url('../img/spaceship.png');
+  position: absolute;
+  top: 420px;
+  left: 175px;
+  background-size: cover;
+}
+
+.asteroid{
+
+  width: 40px;
+  height: 40px;
+  /* background-color: yellow; */
+  background: url('../img/asteroid.png');
+  position: absolute;
+  background-size: cover;
+
+}
+
+#life{
+
+  position: absolute;
+  left: 200px;
+}
+
+.heart{
+
+  height: 50px;
+}
+
+.bullet{
+
+  width: 8px;
+  height: 8px;
+  background-color: yellow;
+  position:absolute;
+  left:0;
+  top:0;
+  border-radius: 50px;
+
+}
+
+
+/********************* Exercice ******************/
+
+#score {
+  padding: 15px;
+  margin: 15px;
+  line-height: 10px;
+  cursor: pointer;
+  border: 2px solid #ddd;
+  user-select: none;
+  position: absolute;
+  left: 5px;
+  top : 440px;
+  color: white;
+}
+
+#message{
+
+  color: white;
+  
+}

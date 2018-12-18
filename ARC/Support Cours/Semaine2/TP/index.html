@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Semaine 2 TP</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/app.css">
+  </head>
+  <body>
+    <h1>Semaine 2 - TP Menu</h1>
+
+      <div class="container">
+        <div class="row">
+          <section id="menu" class="col-sm-9 col-md-6">
+            <h2>Enrée</h2>
+
+              <article>
+                <span class="name">Entrée 1</span>
+                <label>Qunatité</label>
+                <input class="btn btn-default" type="number" value="1"><span class="price">6.20</span><button class="btn btn-default btn-sm">Ajouer</button>
+              </article>
+
+              <article>
+                <span class="name">Entrée 2</span>
+                <label>Qunatité</label>
+                <input class="btn btn-default" type="number" value="1"><span class="price">8.50</span><button class="btn btn-default btn-sm">Ajouer</button>
+              </article>
+
+              <h2>Plats</h2>
+
+                <article>
+                  <span class="name">Plat 1</span>
+                  <label>Qunatité</label>
+                  <input class="btn btn-default" type="number" value="1"><span class="price">19.00</span><button class="btn btn-default btn-sm">Ajouer</button>
+                </article>
+
+                <article>
+                  <span class="name">Plat 2</span>
+                  <label>Qunatité</label>
+                  <input class="btn btn-default" type="number" value="1"><span class="price">14.50</span><button class="btn btn-default btn-sm">Ajouer</button>
+                </article>
+
+
+          </section>
+          <section id="basket" class="col-12 col-sm-3 col-md-6">
+            <h2>Vos Choix : </h2>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Nom</th>
+                  <th>Quantité</th>
+                  <th>Prix Unitaire</th>
+                  <th>Total</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+            <span>Montant Total : </span>
+            <span id="total"></span>
+            <button class="btn btn-primary" id="btnOrder">Commander</button><p class="text-success"></p>
+          </section>
+        </div>
+      </div>
+
+
+
+
+
+
+    <!-- chargement du script après chargement du DOM -->
+    <script src="static/js/app.js"></script>
+  </body>
+</html>

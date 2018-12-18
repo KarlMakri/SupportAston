@@ -1,0 +1,15 @@
+img.player{
+
+    width: 20%;
+}
+
+div.playerNumber{
+
+  background-color: royalblue;
+  color: white;
+  padding: 10px;
+  border-radius: 30px;
+  width: 40px;
+  text-align: center;
+  font-weight: blod;
+}

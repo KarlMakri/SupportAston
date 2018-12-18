@@ -1,0 +1,60 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+
+    <div class="container">
+
+        <a href="{{ path('question_add') }}" class="btn btn-primary">Ajouter une Question</a>
+
+        {# filtres#}
+
+        <form action="">
+            <select name="category" id="">
+                {% for cat in categories %}
+
+                    <option value="{{ cat.id }}">{{ cat.name }}</option>
+
+                {% endfor %}
+            </select>
+
+            <select name="difficulty" id="">
+                {% for key in difficulty | keys %}
+
+                    <option value="{{ difficulty[key] }}">{{ key }}</option>
+
+                {% endfor %}
+            </select>
+            <button>Filtrer</button>
+        </form>
+
+
+        {# filtres#}
+
+        {#{% for question in questions %}#}
+
+            {#<article class="question">#}
+                {#<header>#}
+                    {#{% for topic in proverb.topic %}#}
+                        {#{{topic.name}}&nbsp;&nbsp;#}
+                    {#{% endfor %}#}
+                {#</header>#}
+                {#{{question.label}}#}
+                {#<footer>#}
+                    {#<table>#}
+                        {#<tr>#}
+                            {#<td>{{question.label}}</td>#}
+                            {#<td>QuestionOld {{ question.category.name }}</td>#}
+                            {#<td><a href="" class="btn btn-info btn-sm">Répondre</a></td>#}
+                            {#<td><a href="{{ path('question_edit', {'id' : question.id}) }}" class="btn btn-warning btn-sm">Modifier</a></td>#}
+                            {#<td><a href="{{ path('question_delete', {'id' : question.id}) }}" class="btn btn-danger btn-sm">Supprimer</a></td>#}
+                        {#</tr>#}
+                    {#</table>#}
+                {#</footer>#}
+            {#</article>#}
+
+        {#{% endfor %}#}
+
+    </div>
+
+{% endblock %}
